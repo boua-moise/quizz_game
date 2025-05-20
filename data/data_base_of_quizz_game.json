@@ -1,0 +1,994 @@
+{
+  "reseau_informatique": {
+    "Facile": [
+      {
+        "question": "Quel appareil permet de connecter des périphériques dans un réseau local ?",
+        "choix": ["Routeur", "Switch", "Modem", "Hub"],
+        "reponse": "Switch",
+        "explication": "Le switch permet une communication efficace entre appareils via la commutation de trames.",
+        "points": 5
+      },
+      {
+        "question": "Quel protocole traduit les noms de domaine en adresses IP ?",
+        "choix": ["DHCP", "DNS", "FTP", "HTTP"],
+        "reponse": "DNS",
+        "explication": "Le DNS (Domain Name System) agit comme un annuaire pour Internet.",
+        "points": 5
+      },
+      {
+        "question": "Quelle est l'adresse IPv4 de loopback ?",
+        "choix": ["192.168.1.1", "127.0.0.1", "8.8.8.8", "255.255.255.255"],
+        "reponse": "127.0.0.1",
+        "explication": "Cette adresse permet de tester la connexion réseau locale.",
+        "points": 5
+      },
+      {
+        "question": "Quel port est utilisé par défaut pour SSH ?",
+        "choix": ["21", "22", "80", "443"],
+        "reponse": "22",
+        "explication": "SSH (Secure Shell) permet des connexions sécurisées à distance.",
+        "points": 5
+      },
+      {
+        "question": "Que signifie 'LAN' ?",
+        "choix": ["Local Access Network", "Large Area Network", "Logical Address Node", "Local Area Network"],
+        "reponse": "Local Area Network",
+        "explication": "Réseau couvrant une zone géographique restreinte (maison, bureau).",
+        "points": 5
+      },
+      {
+        "question": "Quel type de câble est utilisé en Ethernet ?",
+        "choix": ["Coaxial", "Fibre optique", "RJ45", "USB-C"],
+        "reponse": "RJ45",
+        "explication": "Le câble RJ45 (CAT5/6) est standard pour les connexions filaires.",
+        "points": 5
+      },
+      {
+        "question": "Quel protocole garantit la livraison des paquets ?",
+        "choix": ["UDP", "TCP", "ICMP", "ARP"],
+        "reponse": "TCP",
+        "explication": "TCP inclut des accusés de réception et retransmissions.",
+        "points": 5
+      },
+      {
+        "question": "Quelle commande affiche la table de routage ?",
+        "choix": ["ipconfig", "tracert", "route print", "ping"],
+        "reponse": "route print",
+        "explication": "Affiche les routes réseau configurées sur la machine.",
+        "points": 5
+      },
+      {
+        "question": "Quel masque correspond à /24 en notation CIDR ?",
+        "choix": ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+        "reponse": "255.255.255.0",
+        "explication": "/24 signifie 24 bits réservés au réseau en IPv4.",
+        "points": 5
+      },
+      {
+        "question": "Quel appareil étend la portée d'un signal Wi-Fi ?",
+        "choix": ["Routeur", "Switch", "Répéteur", "Firewall"],
+        "reponse": "Répéteur",
+        "explication": "Amplifie et redirige le signal sans fil existant.",
+        "points": 5
+      },
+      {
+        "question": "Combien de bits compose une adresse IPv6 ?",
+        "choix": ["32", "64", "128", "256"],
+        "reponse": "128",
+        "explication": "Permet 3.4×10^38 adresses uniques contre 4.3 milliards en IPv4.",
+        "points": 5
+      },
+      {
+        "question": "Quel protocole sécurise les emails ?",
+        "choix": ["SMTP", "IMAP", "POP3", "SSL/TLS"],
+        "reponse": "SSL/TLS",
+        "explication": "Chiffre les communications entre clients et serveurs.",
+        "points": 5
+      },
+      {
+        "question": "Quelle topologie réseau utilise un bus central ?",
+        "choix": ["Étoile", "Anneau", "Bus", "Maillée"],
+        "reponse": "Bus",
+        "explication": "Tous les appareils partagent le même canal de communication.",
+        "points": 5
+      },
+      {
+        "question": "Que vérifie la commande 'ping' ?",
+        "choix": ["Vitesse réseau", "Connectivité IP", "Ports ouverts", "Performances CPU"],
+        "reponse": "Connectivité IP",
+        "explication": "Envoie des paquets ICMP Echo Request pour tester la réponse.",
+        "points": 5
+      },
+      {
+        "question": "Quel service cloud fournit des adresses IP publiques dynamiques ?",
+        "choix": ["DNS", "NAT", "DHCP", "CDN"],
+        "reponse": "DHCP",
+        "explication": "Attribue automatiquement des configurations IP aux clients.",
+        "points": 5
+      }
+    ],
+    "Intermédiaire": [
+      {
+        "question": "Quel protocole permet le routage entre réseaux autonomes ?",
+        "choix": ["OSPF", "BGP", "RIP", "EIGRP"],
+        "reponse": "BGP",
+        "explication": "Border Gateway Protocol, standard pour Internet (AS).",
+        "points": 10
+      },
+      {
+        "question": "Quelle technique évite les collisions dans Ethernet ?",
+        "choix": ["CSMA/CD", "TDMA", "Token Ring", "QoS"],
+        "reponse": "CSMA/CD",
+        "explication": "Détecte les collisions et retransmet après attente aléatoire.",
+        "points": 10
+      },
+      {
+        "question": "Quelle est la fonction d'ARP ?",
+        "choix": ["Résolution IP vers MAC", "Attribution dynamique d'IP", "Chiffrement des données", "Gestion des ports"],
+        "reponse": "Résolution IP vers MAC",
+        "explication": "Address Resolution Protocol pour les communications locales.",
+        "points": 10
+      },
+      {
+        "question": "Quel dispositif sépare les domaines de diffusion ?",
+        "choix": ["Hub", "Routeur", "Switch non managé", "Répéteur"],
+        "reponse": "Routeur",
+        "explication": "Ne forwarde pas les broadcasts entre interfaces.",
+        "points": 10
+      },
+      {
+        "question": "Quelle commande Linux analyse les ports ouverts ?",
+        "choix": ["netstat", "tcpdump", "nmap", "ifconfig"],
+        "reponse": "nmap",
+        "explication": "Outil de cartographie réseau et d'audit de sécurité.",
+        "points": 10
+      },
+      {
+        "question": "Quel type de VPN utilise IPsec ?",
+        "choix": ["SSL VPN", "Site-to-Site", "Client-to-Site", "MPLS VPN"],
+        "reponse": "Site-to-Site",
+        "explication": "Connecte des réseaux fixes via un tunnel chiffré.",
+        "points": 10
+      },
+      {
+        "question": "Quelle couche OSI gère le chiffrement SSL ?",
+        "choix": ["Physique", "Transport", "Présentation", "Application"],
+        "reponse": "Présentation",
+        "explication": "Couche 6 : syntaxe des données et chiffrement.",
+        "points": 10
+      },
+      {
+        "question": "Quelle technologie priorise le trafic vocal ?",
+        "choix": ["VLAN", "QoS", "NAT", "STP"],
+        "reponse": "QoS",
+        "explication": "Quality of Service garantit la bande passante critique.",
+        "points": 10
+      },
+      {
+        "question": "Quel protocole utilise le port 443 ?",
+        "choix": ["HTTP", "SSH", "HTTPS", "RDP"],
+        "reponse": "HTTPS",
+        "explication": "Port standard pour le web sécurisé.",
+        "points": 10
+      },
+      {
+        "question": "Quelle attaque exploite les requêtes DNS ?",
+        "choix": ["Phishing", "DDoS", "DNS spoofing", "MITM"],
+        "reponse": "DNS spoofing",
+        "explication": "Redirige les utilisateurs vers de faux sites.",
+        "points": 10
+      },
+      {
+        "question": "Quelle commande affiche les sauts réseau vers une destination ?",
+        "choix": ["ping", "tracert", "nslookup", "ipconfig"],
+        "reponse": "tracert",
+        "explication": "Trace chaque saut jusqu'à la cible (TTL incrementé).",
+        "points": 10
+      },
+      {
+        "question": "Quelle topologie offre la meilleure redondance ?",
+        "choix": ["Étoile", "Anneau", "Maillée", "Bus"],
+        "reponse": "Maillée",
+        "explication": "Interconnexions multiples entre nœuds.",
+        "points": 10
+      },
+      {
+        "question": "Quelle norme Wi-Fi offre le débit maximal ?",
+        "choix": ["802.11ac", "802.11n", "802.11g", "802.11ax"],
+        "reponse": "802.11ax",
+        "explication": "Wi-Fi 6 (9.6 Gbps théorique).",
+        "points": 10
+      },
+      {
+        "question": "Quel dispositif bloque le trafic non autorisé ?",
+        "choix": ["Switch", "Pare-feu", "Routeur", "Proxy"],
+        "reponse": "Pare-feu",
+        "explication": "Filtre les paquets selon des règles prédéfinies.",
+        "points": 10
+      },
+      {
+        "question": "Quelle technologie virtualise les fonctions réseau ?",
+        "choix": ["VLAN", "NFV", "SDN", "MPLS"],
+        "reponse": "NFV",
+        "explication": "Network Functions Virtualization découple logiciel et matériel.",
+        "points": 10
+      }
+    ],
+    "Difficile": [
+      {
+        "question": "Quel algorithme de routage utilise le coût des liens ?",
+        "choix": ["RIP", "OSPF", "BGP", "EIGRP"],
+        "reponse": "OSPF",
+        "explication": "Open Shortest Path First, basé sur Dijkstra.",
+        "points": 15
+      },
+      {
+        "question": "Quelle technique équilibre la charge entre serveurs ?",
+        "choix": ["NAT", "QoS", "Round Robin DNS", "VLAN"],
+        "reponse": "Round Robin DNS",
+        "explication": "Répartit les requêtes sur plusieurs adresses IP.",
+        "points": 15
+      },
+      {
+        "question": "Quel protocole gère l'autoconfiguration IPv6 ?",
+        "choix": ["DHCPv6", "SLAAC", "ICMPv6", "ARPv6"],
+        "reponse": "SLAAC",
+        "explication": "Stateless Address Autoconfiguration (RFC 4862).",
+        "points": 15
+      },
+      {
+        "question": "Quelle attaque cible les sessions TCP ?",
+        "choix": ["SYN flood", "DNS poisoning", "XSS", "Pharming"],
+        "reponse": "SYN flood",
+        "explication": "Épuise les ressources avec des demi-connexions.",
+        "points": 15
+      },
+      {
+        "question": "Quelle technologie segmente les réseaux logiquement ?",
+        "choix": ["VPN", "VLAN", "NAT", "MPLS"],
+        "reponse": "VLAN",
+        "explication": "Isolation logique sur infrastructure physique.",
+        "points": 15
+      },
+      {
+        "question": "Quel mécanisme évite les boucles réseau ?",
+        "choix": ["STP", "NAT", "QoS", "ARP"],
+        "reponse": "STP",
+        "explication": "Spanning Tree Protocol (IEEE 802.1D).",
+        "points": 15
+      },
+      {
+        "question": "Quelle commande Linux analyse le trafic ?",
+        "choix": ["tcpdump", "netstat", "iftop", "nmap"],
+        "reponse": "tcpdump",
+        "explication": "Sniffer réseau en ligne de commande.",
+        "points": 15
+      },
+      {
+        "question": "Quelle norme sécurise les réseaux sans fil ?",
+        "choix": ["WEP", "WPA3", "PPPoE", "RADIUS"],
+        "reponse": "WPA3",
+        "explication": "Chiffrement AES-256 et protection contre les attaques par dictionnaire.",
+        "points": 15
+      },
+      {
+        "question": "Quel protocole transporte IPv6 sur IPv4 ?",
+        "choix": ["GRE", "6to4", "L2TP", "IPsec"],
+        "reponse": "6to4",
+        "explication": "Tunneling automatique (RFC 3056).",
+        "points": 15
+      },
+      {
+        "question": "Quelle architecture sépare contrôle et data planes ?",
+        "choix": ["MPLS", "SDN", "VPN", "QoS"],
+        "reponse": "SDN",
+        "explication": "Software-Defined Networking avec contrôle centralisé.",
+        "points": 15
+      },
+      {
+        "question": "Quel algorithme de consensus utilise OSPF ?",
+        "choix": ["Paxos", "Raft", "LSDB", "Dijkstra"],
+        "reponse": "LSDB",
+        "explication": "Link-State Database pour synchronisation des routeurs.",
+        "points": 15
+      },
+      {
+        "question": "Quelle technique optimise le routage inter-domaines ?",
+        "choix": ["NAT", "BGP Communities", "VLAN", "STP"],
+        "reponse": "BGP Communities",
+        "explication": "Tags pour politiques de routage personnalisées.",
+        "points": 15
+      },
+      {
+        "question": "Quel protocole gère l'état des flux SDN ?",
+        "choix": ["OpenFlow", "SNMP", "NetConf", "RESTCONF"],
+        "reponse": "OpenFlow",
+        "explication": "Standard de communication entre contrôleur et switches.",
+        "points": 15
+      },
+      {
+        "question": "Quelle méthode prévient les attaques DDoS ?",
+        "choix": ["Rate limiting", "Chiffrement AES", "Authentification RADIUS", "VPN"],
+        "reponse": "Rate limiting",
+        "explication": "Limite le nombre de requêtes par source.",
+        "points": 15
+      },
+      {
+        "question": "Quelle technologie permet le micro-segmentation ?",
+        "choix": ["VLAN", "NSX-T", "ACL", "NAT"],
+        "reponse": "NSX-T",
+        "explication": "Virtualisation réseau avancée de VMware.",
+        "points": 15
+      }
+    ]
+  },
+  "systemes_informatiques": {
+    "Facile": [
+      {
+        "question": "Quel composant exécute les instructions machine ?",
+        "choix": ["CPU", "GPU", "RAM", "SSD"],
+        "reponse": "CPU",
+        "explication": "Unité centrale de traitement.",
+        "points": 5
+      },
+      {
+        "question": "Que signifie 'OS' ?",
+        "choix": ["Operating System", "Output Signal", "Optical Sensor", "Overclocking System"],
+        "reponse": "Operating System",
+        "explication": "Système d'exploitation.",
+        "points": 5
+      },
+      {
+        "question": "Quelle mémoire est volatile ?",
+        "choix": ["HDD", "SSD", "RAM", "ROM"],
+        "reponse": "RAM",
+        "explication": "Perte des données hors tension.",
+        "points": 5
+      },
+      {
+        "question": "Quel périphérique est une unité de stockage ?",
+        "choix": ["CPU", "GPU", "SSD", "PSU"],
+        "reponse": "SSD",
+        "explication": "Stockage persistant flash.",
+        "points": 5
+      },
+      {
+        "question": "Quel système est open-source ?",
+        "choix": ["Windows", "macOS", "Linux", "iOS"],
+        "reponse": "Linux",
+        "explication": "Noyau libre sous licence GPL.",
+        "points": 5
+      },
+      {
+        "question": "Quelle commande liste les fichiers en Linux ?",
+        "choix": ["dir", "ls", "list", "show"],
+        "reponse": "ls",
+        "explication": "Commande de base pour lister le contenu.",
+        "points": 5
+      },
+      {
+        "question": "Quel système de fichiers utilise Windows ?",
+        "choix": ["EXT4", "APFS", "NTFS", "HFS+"],
+        "reponse": "NTFS",
+        "explication": "New Technology File System.",
+        "points": 5
+      },
+      {
+        "question": "Quelle interface gère le matériel ?",
+        "choix": ["BIOS", "Word", "Excel", "Navigateur"],
+        "reponse": "BIOS",
+        "explication": "Basic Input/Output System.",
+        "points": 5
+      },
+      {
+        "question": "Quel composant refroidit le PC ?",
+        "choix": ["RAM", "Ventilateur", "SSD", "Carte mère"],
+        "reponse": "Ventilateur",
+        "explication": "Dissipe la chaleur des composants.",
+        "points": 5
+      },
+      {
+        "question": "Que signifie 'GPU' ?",
+        "choix": ["General Processing Unit", "Graphics Processing Unit", "Global Power Unit", "Gaming Performance Unit"],
+        "reponse": "Graphics Processing Unit",
+        "explication": "Unité de traitement graphique.",
+        "points": 5
+      },
+      {
+        "question": "Quelle commande crée un dossier en Linux ?",
+        "choix": ["mkdir", "create", "newdir", "folder"],
+        "reponse": "mkdir",
+        "explication": "Make directory.",
+        "points": 5
+      },
+      {
+        "question": "Quel langage est compilé ?",
+        "choix": ["Python", "JavaScript", "C++", "PHP"],
+        "reponse": "C++",
+        "explication": "Traduit en code machine avant exécution.",
+        "points": 5
+      },
+      {
+        "question": "Quel outil gère les paquets Linux ?",
+        "choix": ["apt", "exe", "dmg", "msi"],
+        "reponse": "apt",
+        "explication": "Advanced Package Tool (Debian/Ubuntu).",
+        "points": 5
+      },
+      {
+        "question": "Quelle unité mesure la fréquence CPU ?",
+        "choix": ["Hertz", "Watts", "Bytes", "Volts"],
+        "reponse": "Hertz",
+        "explication": "Cycles par seconde (GHz courant).",
+        "points": 5
+      },
+      {
+        "question": "Quel composant alimente le PC ?",
+        "choix": ["CPU", "PSU", "GPU", "SSD"],
+        "reponse": "PSU",
+        "explication": "Power Supply Unit.",
+        "points": 5
+      }
+    ],
+    "Intermédiaire": [
+      {
+        "question": "Quel mécanisme gère la mémoire virtuelle ?",
+        "choix": ["Pagination", "RAID", "NAT", "DNS"],
+        "reponse": "Pagination",
+        "explication": "Découpage mémoire en pages/swapping.",
+        "points": 10
+      },
+      {
+        "question": "Quel système de fichiers offre le snapshotting ?",
+        "choix": ["NTFS", "EXT4", "ZFS", "FAT32"],
+        "reponse": "ZFS",
+        "explication": "Copies instantanées des données.",
+        "points": 10
+      },
+      {
+        "question": "Quelle commande affiche les processus en Linux ?",
+        "choix": ["tasklist", "ps", "showproc", "procs"],
+        "reponse": "ps",
+        "explication": "Affiche les processus en cours.",
+        "points": 10
+      },
+      {
+        "question": "Qu'est-ce qu'un hyperviseur de Type 1 ?",
+        "choix": ["VirtualBox", "VMware Workstation", "Hyper-V", "Wine"],
+        "reponse": "Hyper-V",
+        "explication": "Fonctionne directement sur le matériel (bare-metal).",
+        "points": 10
+      },
+      {
+        "question": "Quelle technologie RAID offre la redondance ?",
+        "choix": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
+        "reponse": "RAID 1",
+        "explication": "Mirroring (duplication des disques).",
+        "points": 10
+      },
+      {
+        "question": "Quel algorithme remplace les pages mémoire ?",
+        "choix": ["FIFO", "LIFO", "LRU", "Round Robin"],
+        "reponse": "LRU",
+        "explication": "Least Recently Used (optimise le cache).",
+        "points": 10
+      },
+      {
+        "question": "Quelle commande Linux modifie les permissions ?",
+        "choix": ["chmod", "perm", "setattr", "modx"],
+        "reponse": "chmod",
+        "explication": "Change mode (ex: chmod 755 fichier).",
+        "points": 10
+      },
+      {
+        "question": "Qu'est-ce que la latence CPU ?",
+        "choix": ["Vitesse d'horloge", "Temps d'accès mémoire", "Nombre de cores", "Consommation électrique"],
+        "reponse": "Temps d'accès mémoire",
+        "explication": "Délai entre la demande et l'obtention des données.",
+        "points": 10
+      },
+      {
+        "question": "Quel outil débogue le réseau sous Linux ?",
+        "choix": ["Wireshark", "Photoshop", "Excel", "PowerShell"],
+        "reponse": "Wireshark",
+        "explication": "Analyseur de paquets réseau.",
+        "points": 10
+      },
+      {
+        "question": "Quelle API gère le parallélisme en Python ?",
+        "choix": ["multiprocessing", "numpy", "pandas", "Django"],
+        "reponse": "multiprocessing",
+        "explication": "Module pour le vrai parallélisme avec processus.",
+        "points": 10
+      },
+      {
+        "question": "Quelle commande formate un disque sous Linux ?",
+        "choix": ["format", "mkfs", "diskpart", "fdisk"],
+        "reponse": "mkfs",
+        "explication": "Make filesystem (ex: mkfs.ext4).",
+        "points": 10
+      },
+      {
+        "question": "Qu'est-ce qu'un deadlock ?",
+        "choix": ["Erreur mémoire", "Blocage mutuel de processus", "Virus", "Panne matérielle"],
+        "reponse": "Blocage mutuel de processus",
+        "explication": "Deux processus attendent chacun une ressource détenue par l'autre.",
+        "points": 10
+      },
+      {
+        "question": "Quelle technologie virtualise les systèmes d'exploitation ?",
+        "choix": ["Docker", "Git", "Nginx", "PostgreSQL"],
+        "reponse": "Docker",
+        "explication": "Conteneurisation légère d'applications.",
+        "points": 10
+      },
+      {
+        "question": "Quel protocole synchronise l'horloge système ?",
+        "choix": ["NTP", "HTTP", "SSH", "DNS"],
+        "reponse": "NTP",
+        "explication": "Network Time Protocol (précision nanoseconde).",
+        "points": 10
+      },
+      {
+        "question": "Quelle commande affiche l'utilisation du disque ?",
+        "choix": ["du", "ls", "top", "ping"],
+        "reponse": "du",
+        "explication": "Disk Usage (ex: du -sh /home).",
+        "points": 10
+      }
+    ],
+    "Difficile": [
+      {
+        "question": "Quel algorithme gère la cohérence des caches ?",
+        "choix": ["MESI", "FIFO", "LRU", "Round Robin"],
+        "reponse": "MESI",
+        "explication": "Modified, Exclusive, Shared, Invalid.",
+        "points": 15
+      },
+      {
+        "question": "Qu'est-ce que le NUMA ?",
+        "choix": ["Uniform Memory Access", "Non-Uniform Memory Access", "Networked Unified Memory", "New Universal Memory Architecture"],
+        "reponse": "Non-Uniform Memory Access",
+        "explication": "Architecture à accès mémoire non uniforme.",
+        "points": 15
+      },
+      {
+        "question": "Quelle technique virtualise les instructions CPU ?",
+        "choix": ["Paravirtualisation", "Binary Translation", "Hardware-assisted", "Emulation complète"],
+        "reponse": "Binary Translation",
+        "explication": "Traduction dynamique du code machine.",
+        "points": 15
+      },
+      {
+        "question": "Quelle fonctionnalité offre SELinux ?",
+        "choix": ["Virtualisation", "Sécurité obligatoire", "Gestion de paquets", "Monitoring réseau"],
+        "reponse": "Sécurité obligatoire",
+        "explication": "Mandatory Access Control (MAC).",
+        "points": 15
+      },
+      {
+        "question": "Quel système de fichiers est journalisé ?",
+        "choix": ["FAT32", "EXT3", "NTFS", "exFAT"],
+        "reponse": "EXT3",
+        "explication": "Journalisation pour intégrité après crash.",
+        "points": 15
+      },
+      {
+        "question": "Qu'est-ce que l'ASLR ?",
+        "choix": ["Address Space Layout Randomization", "Advanced System Load Reducer", "Application Security Layer Response", "Automated System Log Rotation"],
+        "reponse": "Address Space Layout Randomization",
+        "explication": "Protection contre les exploits mémoire.",
+        "points": 15
+      },
+      {
+        "question": "Quelle commande profile les appels système ?",
+        "choix": ["strace", "grep", "find", "curl"],
+        "reponse": "strace",
+        "explication": "Trace les appels système et signaux.",
+        "points": 15
+      },
+      {
+        "question": "Quelle méthode RAID combine mirroring et striping ?",
+        "choix": ["RAID 0", "RAID 1", "RAID 5", "RAID 10"],
+        "reponse": "RAID 10",
+        "explication": "Mirroring + striping (performances + redondance).",
+        "points": 15
+      },
+      {
+        "question": "Qu'est-ce qu'un zero-day exploit ?",
+        "choix": ["Attaque via vulnérabilité inconnue", "Exploit patched", "Attaque par dictionnaire", "Déni de service"],
+        "reponse": "Attaque via vulnérabilité inconnue",
+        "explication": "Aucun correctif disponible au moment de l'attaque.",
+        "points": 15
+      },
+      {
+        "question": "Quel protocole gère les logs système ?",
+        "choix": ["Syslog", "SNMP", "HTTP", "FTP"],
+        "reponse": "Syslog",
+        "explication": "Standard de journalisation des événements.",
+        "points": 15
+      },
+      {
+        "question": "Quelle technologie permet le live migration ?",
+        "choix": ["KVM", "VirtualBox", "Docker", "WSL"],
+        "reponse": "KVM",
+        "explication": "Déplacement de VM entre hôtes sans interruption.",
+        "points": 15
+      },
+      {
+        "question": "Qu'est-ce que le TPM ?",
+        "choix": ["Trusted Platform Module", "Task Process Manager", "Thermal Power Management", "Transparent Page Mapping"],
+        "reponse": "Trusted Platform Module",
+        "explication": "Sécurise les clés cryptographiques matérielles.",
+        "points": 15
+      },
+      {
+        "question": "Quelle commande Linux optimise les performances SQL ?",
+        "choix": ["EXPLAIN", "SELECT", "UPDATE", "DELETE"],
+        "reponse": "EXPLAIN",
+        "explication": "Analyse le plan d'exécution des requêtes.",
+        "points": 15
+      },
+      {
+        "question": "Quelle fonctionnalité offre eBPF ?",
+        "choix": ["Filtrage de paquets", "Virtualisation", "Gestion de fichiers", "Compression"],
+        "reponse": "Filtrage de paquets",
+        "explication": "Extended Berkeley Packet Filter.",
+        "points": 15
+      },
+      {
+        "question": "Quel algorithme équilibre la charge CPU ?",
+        "choix": ["Completely Fair Scheduler", "Round Robin", "Priority-based", "First-Come First-Served"],
+        "reponse": "Completely Fair Scheduler",
+        "explication": "CFS dans le noyau Linux.",
+        "points": 15
+      }
+    ]
+  },
+  "programmation": {
+    "Facile": [
+      {
+        "question": "Quel langage utilise 'print()' pour l'affichage ?",
+        "choix": ["Java", "Python", "C++", "JavaScript"],
+        "reponse": "Python",
+        "explication": "Fonction intégrée en Python.",
+        "points": 5
+      },
+      {
+        "question": "Que signifie 'HTML' ?",
+        "choix": ["HyperText Markup Language", "High-Level Machine Language", "Home Tool Management Layer", "Hyperlink Transfer Module"],
+        "reponse": "HyperText Markup Language",
+        "explication": "Langage de balisage pour le web.",
+        "points": 5
+      },
+      {
+        "question": "Comment déclare-t-on une variable en JavaScript ?",
+        "choix": ["var", "int", "string", "def"],
+        "reponse": "var",
+        "explication": "Mot-clé pour les variables (ES6+: let/const).",
+        "points": 5
+      },
+      {
+        "question": "Quel opérateur compare valeur et type en JS ?",
+        "choix": ["==", "===", "=", "!="],
+        "reponse": "===",
+        "explication": "Comparaison stricte sans conversion.",
+        "points": 5
+      },
+      {
+        "question": "Quelle boucle est post-testée ?",
+        "choix": ["for", "while", "do...while", "forEach"],
+        "reponse": "do...while",
+        "explication": "Exécute au moins une fois avant vérification.",
+        "points": 5
+      },
+      {
+        "question": "Comment commence un commentaire en CSS ?",
+        "choix": ["//", "/*", "#", "--"],
+        "reponse": "/*",
+        "explication": "/* commentaire */",
+        "points": 5
+      },
+      {
+        "question": "Quelle méthode trie un tableau en JS ?",
+        "choix": ["sort()", "filter()", "map()", "reduce()"],
+        "reponse": "sort()",
+        "explication": "Tri en place (attention aux chaînes par défaut).",
+        "points": 5
+      },
+      {
+        "question": "Quelle balise insère une image en HTML ?",
+        "choix": ["<img>", "<image>", "<picture>", "<src>"],
+        "reponse": "<img>",
+        "explication": "Avec attribut src obligatoire.",
+        "points": 5
+      },
+      {
+        "question": "Quel langage est compilé en bytecode ?",
+        "choix": ["Python", "Java", "JavaScript", "PHP"],
+        "reponse": "Java",
+        "explication": "Compilé en bytecode pour la JVM.",
+        "points": 5
+      },
+      {
+        "question": "Quelle instruction gère les exceptions en Python ?",
+        "choix": ["try...except", "catch...throw", "error...handle", "case...when"],
+        "reponse": "try...except",
+        "explication": "Gestion structurée des erreurs.",
+        "points": 5
+      },
+      {
+        "question": "Quelle méthode convertit une chaîne en nombre entier ?",
+        "choix": ["parseInt()", "parseFloat()", "Number()", "toInt()"],
+        "reponse": "parseInt()",
+        "explication": "Conversion explicite en entier.",
+        "points": 5
+      },
+      {
+        "question": "Quel mot-clé crée une constante en ES6 ?",
+        "choix": ["var", "let", "const", "static"],
+        "reponse": "const",
+        "explication": "Valeur non réassignable.",
+        "points": 5
+      },
+      {
+        "question": "Quelle propriété CSS change la couleur ?",
+        "choix": ["font-size", "color", "background", "margin"],
+        "reponse": "color",
+        "explication": "Couleur du texte.",
+        "points": 5
+      },
+      {
+        "question": "Quelle fonction affiche un message en JS ?",
+        "choix": ["console.log()", "print()", "log()", "display()"],
+        "reponse": "console.log()",
+        "explication": "Sortie dans la console du navigateur.",
+        "points": 5
+      },
+      {
+        "question": "Quelle boucle parcourt un tableau en JS ?",
+        "choix": ["for...in", "for...of", "while", "do...while"],
+        "reponse": "for...of",
+        "explication": "Itère sur les valeurs des éléments.",
+        "points": 5
+      }
+    ],
+    "Intermédiaire": [
+      {
+        "question": "Qu'est-ce qu'une closure en JavaScript ?",
+        "choix": ["Fonction anonyme", "Fonction avec accès à son contexte parent", "Classe", "Module ES6"],
+        "reponse": "Fonction avec accès à son contexte parent",
+        "explication": "Maintient les références aux variables externes.",
+        "points": 10
+      },
+      {
+        "question": "Quelle méthode inverse un tableau en place ?",
+        "choix": ["reverse()", "sort()", "shift()", "slice()"],
+        "reponse": "reverse()",
+        "explication": "Modifie l'ordre des éléments.",
+        "points": 10
+      },
+      {
+        "question": "Quelle directive ES6 importe un module ?",
+        "choix": ["require()", "import", "include", "using"],
+        "reponse": "import",
+        "explication": "Syntaxe ES6 pour les modules.",
+        "points": 10
+      },
+      {
+        "question": "Quelle structure de données est FIFO ?",
+        "choix": ["Pile", "File", "Liste", "Arbre"],
+        "reponse": "File",
+        "explication": "First In First Out (ex: file d'attente).",
+        "points": 10
+      },
+      {
+        "question": "Quel design pattern permet une instance unique ?",
+        "choix": ["Factory", "Singleton", "Observer", "Decorator"],
+        "reponse": "Singleton",
+        "explication": "Garantit une seule instance de classe.",
+        "points": 10
+      },
+      {
+        "question": "Quelle méthode HTTP crée une ressource ?",
+        "choix": ["GET", "POST", "PUT", "DELETE"],
+        "reponse": "POST",
+        "explication": "Envoie des données pour création.",
+        "points": 10
+      },
+      {
+        "question": "Quelle fonction fléchée ES6 est correcte ?",
+        "choix": ["(a, b) => a + b", "function(a,b){return a+b}", "=> a + b", "arrow (a,b) => a+b"],
+        "reponse": "(a, b) => a + b",
+        "explication": "Syntaxe concise sans accolades si retour simple.",
+        "points": 10
+      },
+      {
+        "question": "Quel hook React gère les effets secondaires ?",
+        "choix": ["useState", "useEffect", "useContext", "useReducer"],
+        "reponse": "useEffect",
+        "explication": "Pour opérations asynchrones et subscriptions.",
+        "points": 10
+      },
+      {
+        "question": "Quelle méthode enchaîne des promesses ?",
+        "choix": ["then()", "catch()", "finally()", "all()"],
+        "reponse": "then()",
+        "explication": "Enchaînement de traitements asynchrones.",
+        "points": 10
+      },
+      {
+        "question": "Quelle propriété CSS centre horizontalement un bloc ?",
+        "choix": ["text-align", "margin: 0 auto", "padding: center", "align-items"],
+        "reponse": "margin: 0 auto",
+        "explication": "Centrage avec marges automatiques.",
+        "points": 10
+      },
+      {
+        "question": "Quelle méthode clone un objet en JS ?",
+        "choix": ["Object.assign()", "JSON.parse(JSON.stringify())", "Spread operator", "Toutes ces réponses"],
+        "reponse": "Toutes ces réponses",
+        "explication": "Différentes techniques selon la profondeur.",
+        "points": 10
+      },
+      {
+        "question": "Quelle fonction Python lit l'entrée utilisateur ?",
+        "choix": ["input()", "read()", "get()", "scanf()"],
+        "reponse": "input()",
+        "explication": "Retourne une chaîne depuis stdin.",
+        "points": 10
+      },
+      {
+        "question": "Quelle méthode divise une chaîne en tableau ?",
+        "choix": ["split()", "join()", "slice()", "substring()"],
+        "reponse": "split()",
+        "explication": "Découpe selon un séparateur.",
+        "points": 10
+      },
+      {
+        "question": "Quelle structure de données est LIFO ?",
+        "choix": ["File", "Pile", "Arbre", "Graphe"],
+        "reponse": "Pile",
+        "explication": "Last In First Out (ex: pile d'assiettes).",
+        "points": 10
+      },
+      {
+        "question": "Quelle méthode fusionne des tableaux en JS ?",
+        "choix": ["concat()", "merge()", "join()", "push()"],
+        "reponse": "concat()",
+        "explication": "Retourne un nouveau tableau fusionné.",
+        "points": 10
+      }
+    ],
+    "Difficile": [
+      {
+        "question": "Quelle technique optimise les performances React ?",
+        "choix": ["Memoization", "Inheritance", "Polymorphism", "Encapsulation"],
+        "reponse": "Memoization",
+        "explication": "Utilisation de React.memo ou useMemo.",
+        "points": 15
+      },
+      {
+        "question": "Quel algorithme trie avec O(n log n) dans le pire cas ?",
+        "choix": ["Tri à bulles", "Tri rapide", "Tri fusion", "Tri par insertion"],
+        "reponse": "Tri fusion",
+        "explication": "Stable et performant sur grandes données.",
+        "points": 15
+      },
+      {
+        "question": "Quelle méthode implémente l'injection de dépendances ?",
+        "choix": ["Singleton", "Factory", "Decorator", "Observer"],
+        "reponse": "Factory",
+        "explication": "Crée des objets sans spécifier la classe exacte.",
+        "points": 15
+      },
+      {
+        "question": "Quelle structure a une complexité O(1) pour les insertions ?",
+        "choix": ["Liste chaînée", "Tableau dynamique", "Arbre binaire", "File prioritaire"],
+        "reponse": "Liste chaînée",
+        "explication": "Insertion en tête/tail constante.",
+        "points": 15
+      },
+      {
+        "question": "Quel design pattern découple l'abstraction de l'implémentation ?",
+        "choix": ["Bridge", "Adapter", "Proxy", "Facade"],
+        "reponse": "Bridge",
+        "explication": "Sépare interface et implémentation.",
+        "points": 15
+      },
+      {
+        "question": "Quelle fonctionnalité offre WebAssembly ?",
+        "choix": ["Exécution native dans le navigateur", "Stylisation CSS avancée", "Manipulation DOM performante", "Gestion des cookies"],
+        "reponse": "Exécution native dans le navigateur",
+        "explication": "Code bas niveau compilé depuis C++/Rust.",
+        "points": 15
+      },
+      {
+        "question": "Quelle méthode résout le problème N+1 en ORM ?",
+        "choix": ["Lazy loading", "Eager loading", "Caching", "Indexing"],
+        "reponse": "Eager loading",
+        "explication": "Charge les relations en une seule requête.",
+        "points": 15
+      },
+            {
+        "question": "Quelle méthode HTTP est idempotente ?",
+        "choix": ["POST", "PATCH", "PUT", "DELETE"],
+        "reponse": "PUT",
+        "explication": "PUT peut être appliqué plusieurs fois sans effet différent.",
+        "points": 15
+      },
+      {
+        "question": "Quelle est la différence entre concurrency et parallelism ?",
+        "choix": [
+          "Concurrency = même temps, Parallelism = même instant",
+          "Parallelism = gestion multi-thread, Concurrency = mono-thread",
+          "Aucune différence",
+          "Concurrency = illusion de simultanéité, Parallelism = exécution réelle simultanée"
+        ],
+        "reponse": "Concurrency = illusion de simultanéité, Parallelism = exécution réelle simultanée",
+        "explication": "Concurrency gère plusieurs tâches en alternance, parallelism exécute vraiment en même temps.",
+        "points": 15
+      },
+      {
+        "question": "Quel avantage principal offre GraphQL face à REST ?",
+        "choix": [
+          "Meilleures performances",
+          "Schéma fortement typé",
+          "Évitement du over-fetching",
+          "Cache HTTP natif"
+        ],
+        "reponse": "Évitement du over-fetching",
+        "explication": "Le client demande exactement les champs nécessaires.",
+        "points": 15
+      },
+      {
+        "question": "Quel problème est optimal pour le dynamic programming ?",
+        "choix": [
+          "Problèmes avec sous-structure optimale",
+          "Problèmes NP-complets",
+          "Arbres de décision",
+          "Algorithmes gloutons"
+        ],
+        "reponse": "Problèmes avec sous-structure optimale",
+        "explication": "Optimal si la solution globale peut être composée de sous-solutions optimales.",
+        "points": 15
+      },
+      {
+        "question": "Quel cas nécessite WebSockets plutôt que HTTP ?",
+        "choix": [
+          "Téléchargement de fichier",
+          "Communication temps réel bidirectionnelle",
+          "Requête API occasionnelle",
+          "Mise en cache statique"
+        ],
+        "reponse": "Communication temps réel bidirectionnelle",
+        "explication": "Connexion persistante pour échanges instantanés (ex: chat).",
+        "points": 15
+      },
+      {
+        "question": "Quel algorithme de garbage collection utilise le mark-and-sweep ?",
+        "choix": [
+          "Référence counting",
+          "Générationnel",
+          "Stop-and-copy",
+          "Marquage-Compactage"
+        ],
+        "reponse": "Marquage-Compactage",
+        "explication": "Marque les objets utilisés puis compacte la mémoire.",
+        "points": 15
+      },
+      {
+        "question": "Quel principe du functional programming est essentiel ?",
+        "choix": [
+          "Immuabilité",
+          "Héritage",
+          "Variables globales",
+          "Effets de bord"
+        ],
+        "reponse": "Immuabilité",
+        "explication": "Les données ne sont pas modifiées après création.",
+        "points": 15
+      }
+    ]
+  }
+}
